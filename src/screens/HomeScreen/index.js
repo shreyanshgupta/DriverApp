@@ -9,7 +9,7 @@ import NewOrderPopup from "../../components/NewOrderPopup";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Geolocation from "react-native-geolocation-service";
 
-const GOOGLE_MAPS_APIKEY = 'AIzaSyDCNFv1z_EvHN2lBpZ7z7RvO9_-8fG62GA';
+const GOOGLE_MAPS_APIKEY = '';
 
 const HomeScreen = () => {
     const [car,setCar] = useState({
