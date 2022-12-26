@@ -28,7 +28,7 @@ const HomeScreen = () => {
 
     const fetchOrders = async () => {
         try {
-            await fetch('https://adfee1a0-968e-4ef9-99ae-159faee085c6.mock.pstmn.io/listorders')
+            await fetch('https://mocki.io/v1/825d1296-8e02-4b2a-807b-afdf5fe2bd2f')   //https://adfee1a0-968e-4ef9-99ae-159faee085c6.mock.pstmn.io/listorders
                 .then(response => response.json())
                 .then(data=>{
                     // console.log("orders", data);
@@ -251,7 +251,7 @@ const HomeScreen = () => {
                     <Entypo name={"menu"} size={30} color="#4a4a4a" />
                 </View>
 
-                {newOrders.length > 0 && !order && <NewOrderPopup
+                {newOrders?.length > 0 && !order && <NewOrderPopup
                     newOrder={newOrders[0]}
                     duration={2}
                     distance={0.5}
